@@ -58,6 +58,7 @@ For the project we used:
 * Oracle Database
 * Oracle JDBC
 * JavaFX and Eclipse IDE
+* GlueON SceneBuilder
 
 ## Other author:
 * K. Czerkas
