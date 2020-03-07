@@ -4,7 +4,7 @@ It's a project of Legia Warszawa's database GUI application connecting to Oracle
 
 ## Database models
 
-Logical Model           |  Conceptual Model
+Conceptual Model           |  Logical Model
 :-------------------------:|:-------------------------:
 ![](https://github.com/Saiter711/FX_DB_Application/blob/master/extra/conceptual.PNG)  |  ![](https://github.com/Saiter711/FX_DB_Application/blob/master/extra/logical.PNG)
 
