@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane styleClass="anchor" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.PracownicyViewController">
+   <children>
+      <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="593.0" prefWidth="868.0" styleClass="anchor">
+         <children>
+            <TableView fx:id="TablePracownik" layoutX="41.0" layoutY="167.0" prefHeight="335.0" prefWidth="774.0">
+               <columns>
+                  <TableColumn fx:id="Imie" prefWidth="70.0" text="Imię" />
+                  <TableColumn fx:id="Nazwisko" prefWidth="101.0" text="Nazwisko" />
+                  <TableColumn fx:id="DataUro" prefWidth="100.0" text="Data urodzenia" />
+                  <TableColumn fx:id="Miasto" prefWidth="124.0" text="Miasto" />
+                  <TableColumn fx:id="NrTele" prefWidth="103.0" text="Numer Telefonu" />
+                  <TableColumn fx:id="Email" prefWidth="115.0" text="Email" />
+                  <TableColumn fx:id="NrKonta" minWidth="1.0" prefWidth="160.0" text="Numer Konta" />
+               </columns>
+            </TableView>
+            <TextField fx:id="textNazwisko" layoutX="146.0" layoutY="107.0" />
+            <TextField fx:id="textRokZatr" layoutX="146.0" layoutY="135.0" />
+            <Label fx:id="labelFiltry" layoutX="59.0" layoutY="64.0" text="Filtruj:">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelTypObiektu" layoutX="59.0" layoutY="109.0" prefHeight="20.0" prefWidth="87.0" text="Nazwisko:" textAlignment="CENTER">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="buttonSearch" layoutX="323.0" layoutY="120.0" mnemonicParsing="false" onAction="#buttonSearchOnAction" text="Search" />
+            <Label layoutX="584.0" layoutY="14.0" text="Opcje">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Button fx:id="buttonDodaj" layoutX="468.0" layoutY="527.0" mnemonicParsing="false" onAction="#buttonDodajOnAction" text="Dodaj nowego użytkownika" />
+            <Button fx:id="buttonUsun" layoutX="668.0" layoutY="527.0" mnemonicParsing="false" onAction="#buttonUsunOnAction" text="Usuń rekord z tabeli" />
+            <Button fx:id="buttonTabelaObiekty" layoutX="530.0" layoutY="52.0" mnemonicParsing="false" onAction="#buttonChangeOnAction" text="Przejdź do tabeli Obiekty" />
+            <Label layoutX="59.0" layoutY="18.0" text="Pracownicy">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Button layoutX="566.0" layoutY="97.0" mnemonicParsing="false" onAction="#buttonWylogujOnAction" text="Wyloguj się" />
+            <Separator layoutX="505.0" layoutY="144.0" prefWidth="200.0" />
+            <Separator layoutX="502.0" orientation="VERTICAL" prefHeight="145.0" prefWidth="6.0" />
+            <Separator layoutX="702.0" layoutY="-3.0" orientation="VERTICAL" prefHeight="145.0" prefWidth="6.0" />
+            <Separator layoutX="505.0" layoutY="-1.0" prefWidth="200.0" />
+            <Label layoutX="36.0" layoutY="138.0" text="Urodzony po:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

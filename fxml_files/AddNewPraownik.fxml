@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="616.0" prefWidth="715.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AddNewPracownikController">
+   <children>
+      <AnchorPane layoutX="26.0" layoutY="5.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="505.0" prefWidth="604.0">
+         <children>
+            <Label layoutX="176.0" layoutY="14.0" text="Dodaj nowego pracownika">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="36.0" layoutY="51.0" prefHeight="493.0" prefWidth="574.0">
+               <children>
+                  <Label fx:id="Imie" layoutX="144.0" layoutY="21.0" text="Imię:">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="Nazwisko" layoutX="111.0" layoutY="55.0" text="Nazwisko:">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="DataUro" layoutX="76.0" layoutY="91.0" text="Data urodzenia:">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="Miasto" layoutX="128.0" layoutY="124.0" text="Miasto:">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="Ulica" layoutX="142.0" layoutY="158.0" text="Ulica:">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="NrBudynku" layoutX="65.0" layoutY="191.0" text="Numer budynku:">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="textImie" layoutX="188.0" layoutY="19.0" />
+                  <TextField fx:id="textNazwisko" layoutX="188.0" layoutY="53.0" />
+                  <DatePicker fx:id="UroPicker" layoutX="188.0" layoutY="89.0" />
+                  <TextField fx:id="textMiasto" layoutX="188.0" layoutY="122.0" />
+                  <TextField fx:id="textUlica" layoutX="188.0" layoutY="156.0" />
+                  <TextField fx:id="textNrBudynku" layoutX="188.0" layoutY="189.0" />
+                  <Label fx:id="Kod" layoutX="80.0" layoutY="224.0" text="Kod pocztowy:">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="NrTele" layoutX="67.0" layoutY="257.0" text="Numer telefonu:">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="Email" layoutX="133.0" layoutY="295.0" text="Email:">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="NrKonta" layoutX="83.0" layoutY="330.0" text="Numer konta:">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="DataZat" layoutX="61.0" layoutY="370.0" text="Data zatrudnienia:">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="Narodowosc" layoutX="85.0" layoutY="412.0" text="Narodowość:">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="textKod" layoutX="188.0" layoutY="222.0" />
+                  <TextField fx:id="textNrTele" layoutX="188.0" layoutY="255.0" />
+                  <TextField fx:id="textEmail" layoutX="188.0" layoutY="293.0" />
+                  <TextField fx:id="textNrKonta" layoutX="188.0" layoutY="328.0" />
+                  <DatePicker fx:id="ZatrPicker" layoutX="188.0" layoutY="368.0" />
+                  <TextField fx:id="textNarodowosc" layoutX="188.0" layoutY="411.0" />
+                  <Label layoutX="132.0" layoutY="448.0" text="Hasło:">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="80.0" layoutY="482.0" text="Powtórz hasło:">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="textHaslo" layoutX="188.0" layoutY="446.0" />
+                  <TextField fx:id="textPowtorz" layoutX="188.0" layoutY="480.0" />
+                  <Label layoutX="362.0" layoutY="226.0" text="(Format XX-XXX)" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <Button fx:id="buttonDodaj" layoutX="304.0" layoutY="574.0" mnemonicParsing="false" onAction="#buttonDodajOnAction" text="Dodaj" />
+      <Button fx:id="buttonAnuluj" layoutX="630.0" layoutY="574.0" mnemonicParsing="false" onAction="#buttonAnulujOnAction" text="Anuluj" />
+   </children>
+</AnchorPane>
